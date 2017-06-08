@@ -135,6 +135,7 @@ zlabel('z')
 % This is a github test for Matlab integration
 % This is the second github test for Matlab integration
 % This is the 3rd test
+% Master test
 
 % Sort vector IDs into bins along X-direction
 xbins=10;
