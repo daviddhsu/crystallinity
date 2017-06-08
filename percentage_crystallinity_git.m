@@ -69,30 +69,6 @@ axis equal
 
 %% Get chain direction vectors use midpoint method
 
-% for m = 1:nbeadstotal-2*nchains
-%     Mvectors(m,1) = xpos(m,1);
-%     Mvectors(m,2) = ypos(m,1);   
-%     Mvectors(m,3) = zpos(m,1);   
-%     % Use minimum image convention to use unwrapped dimensions at boundary
-%     u=[(xpos(m+2,1)+xlength)-xpos(m,1), xpos(m+2,1)-xpos(m,1), (xpos(m+2,1)-xlength)-xpos(m,1)];
-%     Mvectors(m,4)=u(find(abs(u) == min(abs(u))));
-%     v=[(ypos(m+2,1)+ylength)-ypos(m,1), ypos(m+2,1)-ypos(m,1), (ypos(m+2,1)-ylength)-ypos(m,1)];
-%     Mvectors(m,5)=v(find(abs(v) == min(abs(v))));
-%     w=[(zpos(m+2,1)+zlength)-zpos(m,1), zpos(m+2,1)-zpos(m,1), (zpos(m+2,1)-zlength)-zpos(m,1)];
-%     Mvectors(m,6)=w(find(abs(w) == min(abs(w))));
-% %     Mvectors(m,4) = xpos(m+2,1)-xpos(m,1);
-% %     Mvectors(m,5) = ypos(m+2,1)-ypos(m,1);
-% %     Mvectors(m,6) = zpos(m+2,1)-zpos(m,1);
-% end  
-
-% %Plot box
-% figure;
-% for i=1:nchains
-%         line(xpos((i-1)*nbeadspchain+1:i*nbeadspchain),ypos((i-1)*nbeadspchain+1:i*nbeadspchain),zpos((i-1)*nbeadspchain+1:i*nbeadspchain));
-%         hold on
-% end
-
-
 %Create new position array that follows the centers of every other bond
 %Loop over chains
 midbondxyz = zeros((nbeadspchain-1)*nchains,3);
