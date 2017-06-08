@@ -125,14 +125,12 @@ zlabel('z')
 
 %% Calculate P2 order parameter using neighbor sphere algorithm
 
-
+% add stuff in here
 
 
 
 
 %% Calculate volume of crystals 
-%Calculate P2 order parameter vs x-axis for dummy data
-
 % Sort vector IDs into bins along X-direction
 xbins=10;
 
