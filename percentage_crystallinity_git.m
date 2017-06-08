@@ -131,6 +131,9 @@ zlabel('z')
 
 
 %% Calculate volume of crystals 
+
+% This is a github test for Matlab integration
+
 % Sort vector IDs into bins along X-direction
 xbins=10;
 
